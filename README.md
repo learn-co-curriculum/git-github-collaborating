@@ -543,10 +543,10 @@ just the same as if you'd created it yourself.
 
 The second team member can then contribute to this repo in one of two ways:
 
-1. The first team member can [make them a collaborator][add-collaborator] on the
-   new "central" repo so they can submit PRs directly to it, or
-2. The second team member can fork the new "central" repo (i.e., fork the fork),
-   and proceed using the fork and clone workflow.
+1. The second team member can fork the new "central" repo (i.e., fork the fork),
+   and proceed using the fork and clone workflow, or
+2. The first team member can [make them a collaborator][add-collaborator] on the
+   new "central" repo so they can submit PRs directly to it.
 
 [add-collaborator]: https://www.tutorialspoint.com/how-to-add-collaborators-to-a-repository-in-github
 
