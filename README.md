@@ -145,8 +145,9 @@ To github.com:your-github-account/our-great-book.git
 ```
 
 This command has created the new branch on GitHub and populated it with our
-content for Chapter 1. Head back to the repo on GitHub. You should see something
-like this at the top of the page:
+content for Chapter 1. Head back to the repo on GitHub. You should see a message
+at the top of the page indicating that `chapter-1` had recent pushes along with
+a "Compare & pull request" button:
 
 ![branch pushed to github](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/recent-pushes.png)
 
@@ -178,9 +179,11 @@ is approved and ready to go, the pull request is merged in.
 
 ### Example: Creating and Merging a Pull Request
 
-Let's go ahead and create a pull request for our `chapter-1` branch. Return to the
-GitHub repo. If you see the yellow highlighted message at the top of the screen,
-go ahead and click the "Compare & pull request" button. Otherwise, click the branch drop-down and select the `chapter-1` branch. You should see something like this:
+Let's go ahead and create a pull request for our `chapter-1` branch. Return to
+the GitHub repo. If you see the "Compare & pull request" button at the top of
+the screen, go ahead and click it. Otherwise, click the branch drop-down and
+select the `chapter-1` branch. You should see a message indicating that the
+branch is one commit ahead of `main`, and a Contribute drop-down on the right:
 
 ![chapter-1 branch selected](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/contribute-drop-down.png)
 
@@ -211,7 +214,7 @@ a list of GitHub usernames of other people in the organization. You could select
 one or more of them to request that they review your pull request.
 
 Let's go ahead and click the "Create pull request" button. This will take you to
-a page that looks like this:
+a page with the information for the pull request:
 
 ![pull request](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/pull-request.png)
 
@@ -259,15 +262,17 @@ comment, approve the pull request, or request changes:
 Once any comments have been resolved, requested changes made, etc., and the pull
 request has been approved, you can merge in the branch by going back to the
 "Conversation" tab and clicking "Merge pull request", then "Confirm merge". Go
-ahead and do that; you should see this message:
+ahead and do that; you should see a message telling you that the pull request
+has been successfully merged. There will also be a button you can use to delete
+the branch you just merged:
 
 ![pull request merged](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/pull-request-merged.png)
 
-Generally, it's a good idea to delete branches that you no longer need, although
-you don't have to. Let's click "Delete branch", then navigate to the "Code" tab
-at the top of the page. There you'll see that you're on the main branch, and
-that `chapter-1.md` has been added to the files. If you click on the branch
-dropdown, you'll see that our `chapter-1` branch is gone.
+Generally, it's a good idea to delete branches that you no longer need. Let's
+click "Delete branch", then navigate to the "Code" tab at the top of the page.
+There you'll see that you're on the main branch, and that `chapter-1.md` has
+been added to the files. If you click on the branch dropdown, you'll see that
+our `chapter-1` branch is gone.
 
 #### Pulling Changes from GitHub to Local
 
@@ -296,7 +301,12 @@ You should also see in VS Code that we're on the main branch, and that
 `chapter-1.md` is now present in the file list.
 
 We're finished with the `chapter-1` branch so, to keep things tidy, go ahead and
-delete it in the terminal.
+delete it in the terminal:
+
+```console
+$ git branch -d chapter-1
+Deleted branch chapter-1 (was 276fc72).
+```
 
 ## Merging Pull Requests that have Conflicts
 
@@ -351,7 +361,7 @@ earlier, except now we're making the request for the `chapter-2` branch instead
 of `chapter-1`.
 
 When you get to the form that enables you to create the pull request, you should
-see the following message:
+see a message indicating that the branch can't be automatically merged:
 
 ![can't automatically merge](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/cant-automatically-merge.png)
 
@@ -363,7 +373,9 @@ Go ahead and create the pull request.
 
 #### Resolving Merge Conflicts
 
-Once you've created the pull request, it will look something like this:
+Once you've created the pull request, the page will look similar to what we saw
+earlier except it will indicate that the branch has conflicts that must be
+resolved:
 
 ![pull request with conflicts](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/pr-with-conflicts.png)
 
@@ -493,8 +505,8 @@ have permissions to push up any changes you make to the central repo.
 The workflow in this case is to fork the repo to your own GitHub account, then
 clone down your fork to your local machine to work on it. Once you've completed
 your work and push it back up to your fork on GitHub, you will see the familiar
-yellow-highlighted message with a button to submit a pull request to the source
-repo.
+message indicating your branch had recent pushes and a button to submit a pull
+request to the source repo.
 
 Making open source contributions is a great way to practice the skills you've
 learned in this module and build your GitHub profile at the same time. Here are
