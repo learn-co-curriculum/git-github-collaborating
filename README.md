@@ -322,7 +322,7 @@ which two members of a team have pushed up conflicting changes to a file. Note
 that, in doing this, we will depart from best practices in a couple of
 instances.
 
-Say one of our co-authors is working on Chapter 2. They create a new `chapter-2`
+Say one of our coauthors is working on Chapter 2. They create a new `chapter-2`
 branch and add their draft. At the same time (ignoring best practice), Author 2
 also make a few edits to Chapter 1. Let's go ahead and do that:
 
@@ -380,7 +380,7 @@ resolved:
 ![pull request with conflicts](https://curriculum-content.s3.amazonaws.com/phase-1/git-github/collaborating/pr-with-conflicts.png)
 
 Before we get to resolving the conflicts, let's take a look at the "Changed
-files" tab. When you created our first pull request, the diff just showed the
+files" tab. When we created our first pull request, the diff just showed the
 addition of lines to our file. In this case, however, the output is a bit more
 informative. For our version of the file (yours will be different, of course),
 it looks like this:
@@ -481,8 +481,8 @@ strategies you (and your teammates) can use that will help keep conflicts to a
 minimum:
 
 1. Always create feature branches and do your coding there.
-2. As much as possible, avoid doing work on a feature branch that isn't directly
-   related to the feature you're working on.
+2. When working on a feature branch, as much as possible, avoid doing work that
+   isn't directly related to the feature you're working on.
 3. Update your feature branch frequently to make sure it's kept up to date with
    the `main` branch on GitHub.
 4. Develop good communication strategies as a team, so everyone knows what their
@@ -490,7 +490,7 @@ minimum:
 
 As you can imagine, if you're working on a large project with many team members,
 resolving merge conflicts can become quite messy! Making an effort to adopt the
-habits listed above will go a long way toward minimizing those situations.
+habits listed above will help you avoid those situations.
 
 ## Making Open Source Contributions: The Fork and Clone Workflow
 
